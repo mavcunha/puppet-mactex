@@ -1,21 +1,30 @@
-# Template Puppet Module for Boxen
+# MacTex Puppet Module for Boxen
 
-An example of how we write Puppet modules for Boxen. Replace this
-paragraph with a short explanation of what the heck makes your module
-useful.
+This package gives the ability to install the different versions of MacTex as well 
+as implementing functionality for the TexLive manager. 
+
 
 ## Usage
 
 ```puppet
-boxen::example { 'best example ever':
-  salutation => 'fam'
+include mactex::full
+```
+
+```puppet
+include mactex::basic
+include mactex::additions
+```
+
+```puppet
+include mactex::manager::update
+mactex::manager::install {
+  ["amsmath", "graphicx"]
 }
 ```
 
 ## Required Puppet Modules
 
 * `boxen`
-* `anything-else`
 
 ## Development
 
