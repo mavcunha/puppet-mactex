@@ -5,6 +5,6 @@ class mactex::manager::update {
 
 	exec { "GeneralUpdate":
 		command => "/usr/texbin/tlmgr update --all",
-		requires => Exec["SelfUpdate"]
+		require => Exec['SelfUpdate']
 	}
 }
