@@ -3,6 +3,7 @@
 This package gives the ability to install the different versions of MacTex as well 
 as implementing functionality for the TexLive manager. 
 
+[![Build Status](https://travis-ci.org/Omegaice/puppet-mactex.png)](https://travis-ci.org/Omegaice/puppet-mactex)
 
 ## Usage
 
