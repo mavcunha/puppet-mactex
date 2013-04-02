@@ -6,15 +6,18 @@ as implementing functionality for the TexLive manager.
 
 ## Usage
 
+Full Package:
 ```puppet
 include mactex::full
 ```
 
+Basic Package with additions:
 ```puppet
 include mactex::basic
 include mactex::additions
 ```
 
+Manager functionality:
 ```puppet
 include mactex::manager::update
 mactex::manager::install {
