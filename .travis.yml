@@ -1,4 +1,5 @@
 ---
-script: "./script/cibuild"
+script: "bin/rake"
+bundler_args: --binstubs
 rvm:
   - "1.9.3"
